@@ -5,10 +5,10 @@ permalink: /privacy-policy.html
 
 # Landed Privacy Policy
 
-**Effective date:** [FILL IN — date you start using this]
+**Effective date:** August 21, 2026
 **Last updated:** August 2026
 
-*This is a first draft written to reflect exactly what the Landed app does today. It isn't legal advice — have a lawyer review it before publishing, especially the sections marked [FILL IN].*
+*This is a first draft written to reflect exactly what the Landed app does today. It isn't legal advice — have a lawyer review it before wider release.*
 
 ## 1. Who this covers
 
@@ -37,8 +37,8 @@ We do not use your data for advertising, and we do not sell your data to anyone.
 Landed uses a small number of service providers to run the app. Each only receives the data it needs to do its job:
 
 - **Google** — for sign-in and, if you connect it, read-only Gmail access, per Google's API Services User Data Policy.
-- **Anthropic** — processes the text of candidate booking emails to extract structured booking details. Anthropic does not use this data to train its models under our agreement with them. [FILL IN if you have a specific Anthropic API data-use agreement to cite.]
-- **Supabase** — hosts our database and authentication system. Your data is stored in Supabase's infrastructure. [FILL IN region/hosting details if you want to specify one.]
+- **Anthropic** — processes the text of candidate booking emails to extract structured booking details. Anthropic does not use API data to train its models, per Anthropic's standard commercial API terms.
+- **Supabase** — hosts our database and authentication system. Your data is stored in Supabase's infrastructure.
 
 We don't share your data with any other third party, and we don't sell it.
 
@@ -48,7 +48,7 @@ We keep your data as long as your account exists. You can delete individual book
 
 ## 6. Your choices
 
-- You can disconnect Gmail access at any time [FILL IN if/when a disconnect button is added — as of this writing, deleting your account is the way to fully revoke it].
+- As of this writing, deleting your account (see above) is the way to fully revoke Landed's Gmail access — there isn't yet a way to disconnect Gmail on its own while keeping the rest of your account.
 - You can review, edit, or delete any booking or trip in the app at any time.
 - You can delete your account and all your data at any time (see above).
 - You can also revoke Landed's access to your Google account directly from your [Google Account permissions page](https://myaccount.google.com/permissions).
@@ -59,7 +59,7 @@ We use industry-standard practices to protect your data, including per-user data
 
 ## 8. Children's privacy
 
-Landed is not directed at children, and we don't knowingly collect data from anyone under 13 [FILL IN — 16 if you want to align with GDPR instead of COPPA].
+Landed is not directed at children, and we don't knowingly collect data from anyone under 13.
 
 ## 9. Changes to this policy
 
@@ -67,4 +67,4 @@ If this policy changes in a meaningful way, we'll update the "Last updated" date
 
 ## 10. Contact
 
-Questions about this policy or your data? Contact [FILL IN — recommend a dedicated address like privacy@yourdomain.com rather than a personal inbox once you have a domain; johnsontakezo@gmail.com works as a placeholder for now].
+Questions about this policy or your data? Contact johnsontakezo@gmail.com.
