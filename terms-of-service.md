@@ -5,10 +5,10 @@ permalink: /terms-of-service.html
 
 # Landed Terms of Service
 
-**Effective date:** [FILL IN]
+**Effective date:** August 21, 2026
 **Last updated:** August 2026
 
-*This is a first draft, not legal advice — have a lawyer review it before publishing, especially the sections marked [FILL IN]. Some sections (governing law, entity name) need your specific details.*
+*This is a first draft, not legal advice — have a lawyer review it before wider release.*
 
 ## 1. Acceptance of terms
 
@@ -22,7 +22,7 @@ Landed is a personal travel-organization app that lets you track flights, hotels
 
 ## 3. Eligibility and accounts
 
-You must be at least [FILL IN — 13 or 16 depending on your children's-privacy stance above] to use Landed. You're responsible for maintaining the security of your account and for all activity under it.
+You must be at least 13 to use Landed. You're responsible for maintaining the security of your account and for all activity under it.
 
 ## 4. Your content
 
@@ -53,7 +53,7 @@ Landed is provided "as is," especially during private testing. We don't warrant 
 
 ## 9. Limitation of liability
 
-To the fullest extent permitted by law, Landed and its developer aren't liable for any indirect, incidental, or consequential damages arising from your use of the app, including missed flights, incorrect booking details, or data loss — [FILL IN: consider a liability cap appropriate to your situation once you consult a lawyer].
+To the fullest extent permitted by law, Landed and its developer aren't liable for any indirect, incidental, or consequential damages arising from your use of the app, including missed flights, incorrect booking details, or data loss. Because Landed is provided free of charge, our total liability for any claim relating to the app is limited to $100.
 
 ## 10. Changes to these terms
 
@@ -61,8 +61,8 @@ We may update these Terms from time to time. If changes are significant, we'll u
 
 ## 11. Governing law
 
-[FILL IN — the state/country whose law governs these Terms; typically wherever you're based.]
+These Terms are governed by the laws of the State of Georgia, USA, without regard to its conflict-of-laws principles.
 
 ## 12. Contact
 
-Questions about these Terms? Contact [FILL IN — same as Privacy Policy contact].
+Questions about these Terms? Contact johnsontakezo@gmail.com.
