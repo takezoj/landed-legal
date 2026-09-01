@@ -67,4 +67,27 @@ If this policy changes in a meaningful way, we'll update the "Last updated" date
 
 ## 10. Contact
 
+Questions about this policy or your data? Contact landedconcierge@gmail.com.
+
+## 6. Your choices
+
+- As of this writing, deleting your account (see above) is the way to fully revoke Landed's Gmail access — there isn't yet a way to disconnect Gmail on its own while keeping the rest of your account.
+- You can review, edit, or delete any booking or trip in the app at any time.
+- You can delete your account and all your data at any time (see above).
+- You can also revoke Landed's access to your Google account directly from your [Google Account permissions page](https://myaccount.google.com/permissions).
+
+## 7. Security
+
+We use industry-standard practices to protect your data, including per-user data isolation at the database level (row-level security) so no user can access another user's data. No method of storage or transmission is 100% secure, and we can't guarantee absolute security.
+
+## 8. Children's privacy
+
+Landed is not directed at children, and we don't knowingly collect data from anyone under 13.
+
+## 9. Changes to this policy
+
+If this policy changes in a meaningful way, we'll update the "Last updated" date above and make a reasonable effort to notify you, such as through an in-app notice.
+
+## 10. Contact
+
 Questions about this policy or your data? Contact johnsontakezo@gmail.com.
