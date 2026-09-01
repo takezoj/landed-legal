@@ -65,6 +65,26 @@ These Terms are governed by the laws of the State of Georgia, USA, without regar
 
 ## 12. Contact
 
+Questions about these Terms? Contact landedconcierge@gmail.com.
+
+## 8. Disclaimer of warranties
+
+Landed is provided "as is," especially during private testing. We don't warrant that the app will be uninterrupted, error-free, or that automatically-detected booking information will always be accurate. Landed is a convenience tool, not a substitute for your official travel documentation.
+
+## 9. Limitation of liability
+
+To the fullest extent permitted by law, Landed and its developer aren't liable for any indirect, incidental, or consequential damages arising from your use of the app, including missed flights, incorrect booking details, or data loss. Because Landed is provided free of charge, our total liability for any claim relating to the app is limited to $100.
+
+## 10. Changes to these terms
+
+We may update these Terms from time to time. If changes are significant, we'll update the "Last updated" date and make a reasonable effort to notify you, such as through an in-app notice.
+
+## 11. Governing law
+
+These Terms are governed by the laws of the State of Georgia, USA, without regard to its conflict-of-laws principles.
+
+## 12. Contact
+
 Questions about these Terms? Contact johnsontakezo@gmail.com.
 
 ## 8. Disclaimer of warranties
