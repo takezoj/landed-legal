@@ -1,0 +1,386 @@
+---
+title: Landed
+permalink: /
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Landed — Your Bookings, All in One Place</title>
+<meta name="description" content="Landed is a travel app that keeps every flight, hotel, and booking in one place — automatically, by reading your confirmation emails.">
+
+<meta name="google-site-verification" content="kMKayYgzYyAC2Q1yy9kbIdLQsTLIh_hUcUhgzg7lERU" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+  :root {
+    --ink: #15181D;
+    --paper: #FFFFFF;
+    --page: #EFEEE9;
+    --line: #D8D6CC;
+    --red: #C7351F;
+    --gold: #8A6A17;
+    --gray: #6B6B63;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #EDEAE2;
+      --paper: #1B1D22;
+      --page: #101114;
+      --line: #34363C;
+      --red: #E2604A;
+      --gold: #D9B54D;
+      --gray: #9C9A92;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.5;
+  }
+  a { color: inherit; }
+
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+
+  header.site {
+    padding: 24px 0 0;
+  }
+  .wordmark {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+  .wordmark svg { width: 22px; height: 22px; fill: var(--red); flex-shrink: 0; }
+  .wordmark span {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 22px;
+    letter-spacing: -0.5px;
+  }
+
+  .hero {
+    padding: 64px 0 56px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 48px;
+    align-items: center;
+  }
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; padding: 40px 0 40px; }
+  }
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    font-size: 11.5px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 0 0 14px;
+  }
+  h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: clamp(32px, 5vw, 46px);
+    line-height: 1.08;
+    letter-spacing: -0.5px;
+    margin: 0 0 18px;
+  }
+  .lede {
+    font-size: 17px;
+    color: var(--gray);
+    max-width: 46ch;
+    margin: 0 0 8px;
+  }
+  .status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 22px;
+    padding: 7px 13px;
+    border: 1.5px solid var(--ink);
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .status-pill .dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--gold);
+  }
+
+  /* Decorative boarding-pass card echoing the app's own ticket-stub UI. */
+  .pass {
+    display: flex;
+    background: var(--paper);
+    border: 1.5px solid var(--ink);
+    box-shadow: 6px 6px 0 var(--line);
+  }
+  .pass-main { flex: 1; min-width: 0; padding: 20px; }
+  .pass-accent { width: 6px; background: var(--red); flex-shrink: 0; }
+  .pass-name {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 19px;
+    letter-spacing: -0.2px;
+  }
+  .pass-fields { display: flex; gap: 22px; margin-top: 12px; }
+  .pass-field-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: var(--gray);
+    text-transform: uppercase;
+  }
+  .pass-field-value {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 3px;
+  }
+  .pass-barcode { display: flex; gap: 2px; height: 20px; align-items: flex-end; margin-top: 16px; }
+  .pass-barcode div { width: 2.5px; background: var(--ink); }
+  .pass-stub {
+    width: 92px;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .pass-dash {
+    position: absolute;
+    left: 0; top: 12px; bottom: 12px; width: 1.5px;
+    display: flex; flex-direction: column; justify-content: space-between; align-items: center;
+  }
+  .pass-dash div { width: 1.5px; height: 6px; background: var(--ink); }
+  .pass-stub-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    font-size: 9px;
+    letter-spacing: 0.8px;
+    color: var(--gray);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .pass-stub-word {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  section.features {
+    padding: 8px 0 56px;
+    border-top: 1px solid var(--line);
+  }
+  .features h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin: 40px 0 24px;
+  }
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5px;
+    background: var(--line);
+    border: 1.5px solid var(--ink);
+  }
+  @media (max-width: 640px) {
+    .feature-grid { grid-template-columns: 1fr; }
+  }
+  .feature {
+    background: var(--paper);
+    padding: 24px 26px;
+  }
+  .feature h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 0 8px;
+  }
+  .feature p {
+    margin: 0;
+    color: var(--gray);
+    font-size: 14.5px;
+  }
+
+  section.how {
+    padding: 8px 0 60px;
+  }
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 24px;
+  }
+  @media (max-width: 700px) {
+    .steps { grid-template-columns: 1fr; }
+  }
+  .step-num {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 28px;
+    color: var(--line);
+    -webkit-text-stroke: 1.5px var(--ink);
+    color: transparent;
+  }
+  .step h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15.5px;
+    font-weight: 700;
+    margin: 8px 0 6px;
+  }
+  .step p { margin: 0; color: var(--gray); font-size: 14px; }
+
+  footer {
+    border-top: 1.5px solid var(--ink);
+    padding: 28px 0 40px;
+  }
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  .footer-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+  .footer-links a { text-decoration: none; border-bottom: 1.5px solid var(--line); padding-bottom: 2px; }
+  .footer-links a:hover { border-bottom-color: var(--red); }
+  .footer-meta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11.5px;
+    color: var(--gray);
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="wordmark">
+      <svg viewBox="0 0 24 24"><path d="M22 16.5v-2l-8.5-5V4c0-1.1-.9-2-2-2s-2 .9-2 2v5.5L1 14.5v2l8.5-2.6V19l-2.5 1.8V22l3.5-1 3.5 1v-1.2L11.5 19v-5.1L20 16.5z"/></svg>
+      <span>LANDED</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Travel booking organizer</p>
+      <h1>Every booking, in one place — without the digging.</h1>
+      <p class="lede">Landed automatically finds your flight, hotel, and rental confirmations in Gmail and organizes them into trips, so you're never digging through your inbox to find which airline you're flying or where you're staying.</p>
+      <div class="status-pill"><span class="dot"></span>Currently in closed testing</div>
+    </div>
+
+    <div class="pass" aria-hidden="true">
+      <div class="pass-main">
+        <div class="pass-name">Tokyo</div>
+        <div class="pass-fields">
+          <div>
+            <div class="pass-field-label">Start</div>
+            <div class="pass-field-value">Fri, Oct 2</div>
+          </div>
+          <div>
+            <div class="pass-field-label">End</div>
+            <div class="pass-field-value">Sun, Oct 11</div>
+          </div>
+        </div>
+        <div class="pass-barcode">
+          <div style="height:60%"></div><div style="height:85%"></div><div style="height:40%"></div>
+          <div style="height:70%"></div><div style="height:95%"></div><div style="height:50%"></div>
+          <div style="height:65%"></div><div style="height:35%"></div><div style="height:80%"></div>
+          <div style="height:55%"></div><div style="height:90%"></div><div style="height:45%"></div>
+          <div style="height:75%"></div><div style="height:60%"></div>
+        </div>
+      </div>
+      <div class="pass-stub">
+        <div class="pass-dash">
+          <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="pass-stub-label">In</div>
+        <div class="pass-stub-word">23</div>
+        <div class="pass-stub-label">Days</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>What it does</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <h3>Finds bookings automatically</h3>
+        <p>Connect Gmail and Landed reads your confirmation emails — flights, hotels, cars, trains — and adds them for your review. Read-only access; it never sends, deletes, or modifies anything in your inbox.</p>
+      </div>
+      <div class="feature">
+        <h3>Organizes by trip</h3>
+        <p>Bookings group into trips automatically, so a week in Tokyo or a weekend drive shows every reservation together, in order.</p>
+      </div>
+      <div class="feature">
+        <h3>Tracks your budget</h3>
+        <p>Set a budget per trip and see spend broken down by category — flights, lodging, food, activities — as bookings and expenses come in.</p>
+      </div>
+      <div class="feature">
+        <h3>Works when you're offline</h3>
+        <p>Your bookings, itinerary, and trip photos stay available even without a signal, so you're never stuck without your confirmation number at the gate.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="how">
+    <h2 style="font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:var(--gray);margin:0 0 8px;">How it works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Connect Gmail</h3>
+        <p>Sign in and grant Landed read-only access to search for booking confirmations.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Review what it finds</h3>
+        <p>New bookings land in a review queue — confirm the ones that are right, dismiss anything that isn't.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>See it all in one place</h3>
+        <p>Trips, dates, confirmation numbers, and budgets — organized automatically, ready before you travel.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap footer-row">
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="support.html">Support</a>
+      <a href="mailto:landedconcierge@gmail.com">Contact</a>
+    </div>
+    <div class="footer-meta">&copy; 2026 Landed</div>
+  </div>
+</footer>
+
+</body>
+</html>
