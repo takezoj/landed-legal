@@ -8,8 +8,6 @@ permalink: /privacy-policy.html
 **Effective date:** August 21, 2026
 **Last updated:** October 7, 2026
 
-*This is a first draft written to reflect exactly what the Landed app does today. It isn't legal advice — have a lawyer review it.*
-
 ## 1. Who this covers
 
 This policy applies to Landed, a mobile app that helps you keep track of your travel bookings — flights, hotels, cars, and more — in one place.
