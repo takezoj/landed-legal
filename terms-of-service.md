@@ -6,9 +6,7 @@ permalink: /terms-of-service.html
 # Landed Terms of Service
 
 **Effective date:** August 21, 2026
-**Last updated:** September 1, 2026
-
-*This is a first draft, not legal advice — have a lawyer review it.*
+**Last updated:** October 7, 2026
 
 ## 1. Acceptance of terms
 
@@ -26,7 +24,7 @@ You must be at least 13 to use Landed. You're responsible for maintaining the se
 
 ## 4. Your content
 
-You retain ownership of the trip and booking information you enter or that Landed detects on your behalf ("your content"). You grant Landed a limited license to store, process, and display your content back to you as part of providing the app. We don't claim ownership of your content and don't use it for any purpose other than operating the app for you, as described in our [Privacy Policy](./privacy-policy.md).
+You retain ownership of the trip and booking information you enter or that Landed detects on your behalf, along with any photos and documents you attach ("your content"). You grant Landed a limited license to store, process, and display your content back to you as part of providing the app. We don't claim ownership of your content and don't use it for any purpose other than operating the app for you, as described in our [Privacy Policy](./privacy-policy.html).
 
 You're responsible for the accuracy of information you enter manually. Automatically-detected bookings are extracted by an AI model and may occasionally be inaccurate or incomplete — always double-check auto-detected details against your original confirmation email before relying on them.
 
@@ -41,12 +39,31 @@ You agree not to:
 
 ## 6. Third-party services
 
-Landed relies on third-party services (Google, for sign-in and Gmail access; Anthropic, for extracting booking details from email text; Supabase, for hosting) to function. Your use of Landed is also subject to those providers' own terms where applicable. We aren't responsible for outages or changes on their end that affect Landed.
+Landed relies on third-party services (Google and Apple, for sign-in and, with Google, Gmail access; Anthropic, for extracting booking details from email text; Supabase, for hosting and storage; Sentry, for crash and performance reporting; Expo and Apple, for push notifications) to function. Your use of Landed is also subject to those providers' own terms where applicable. We aren't responsible for outages or changes on their end that affect Landed.
 
 ## 7. Account deletion and termination
 
 You can delete your account and all associated data at any time from Settings → Danger Zone → Delete Account. We may also suspend or terminate access if these Terms are violated, or discontinue the service at any time.
 
+## 8. Disclaimer of warranties
+
+Landed is provided "as is." We don't warrant that the app will be uninterrupted, error-free, or that automatically-detected booking information will always be accurate. Landed is a convenience tool, not a substitute for your official travel documentation.
+
+## 9. Limitation of liability
+
+To the fullest extent permitted by law, Landed and its developer aren't liable for any indirect, incidental, or consequential damages arising from your use of the app, including missed flights, incorrect booking details, or data loss. Because Landed is provided free of charge, our total liability for any claim relating to the app is limited to $100.
+
+## 10. Changes to these terms
+
+We may update these Terms from time to time. If changes are significant, we'll update the "Last updated" date and make a reasonable effort to notify you, such as through an in-app notice.
+
+## 11. Governing law
+
+These Terms are governed by the laws of the State of Georgia, USA, without regard to its conflict-of-laws principles.
+
+## 12. Contact
+
+Questions about these Terms? Contact landedconcierge@gmail.com.
 ## 8. Disclaimer of warranties
 
 Landed is provided "as is," especially during private testing. We don't warrant that the app will be uninterrupted, error-free, or that automatically-detected booking information will always be accurate. Landed is a convenience tool, not a substitute for your official travel documentation.
