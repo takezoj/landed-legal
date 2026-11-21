@@ -10,6 +10,7 @@ permalink: /
 <title>Landed — Your Bookings, All in One Place</title>
 <meta name="description" content="Landed is a travel app that keeps every flight, hotel, and booking in one place — automatically, by reading your confirmation emails.">
 <link rel="canonical" href="https://landedtravel.app/">
+<meta name="apple-itunes-app" content="app-id=6803170357">
 
 <meta name="google-site-verification" content="kMKayYgzYyAC2Q1yy9kbIdLQsTLIh_hUcUhgzg7lERU" />
 
@@ -99,22 +100,34 @@ permalink: /
     max-width: 46ch;
     margin: 0 0 8px;
   }
-  .status-pill {
+  .cta {
     display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    margin-top: 22px;
-    padding: 7px 13px;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 24px;
+    padding: 12px 22px;
+    background: var(--ink);
+    color: var(--paper);
     border: 1.5px solid var(--ink);
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: 700;
-    font-size: 11px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 5px 5px 0 var(--line);
+    transition: transform .12s ease, box-shadow .12s ease;
   }
-  .status-pill .dot {
-    width: 7px; height: 7px; border-radius: 50%;
-    background: var(--gold);
+  .cta:hover { transform: translate(-1px, -1px); box-shadow: 6px 6px 0 var(--red); }
+  .cta:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+  .cta small {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: .75;
+  }
+  .cta strong {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    letter-spacing: -0.2px;
   }
 
   /* Decorative boarding-pass card echoing the app's own ticket-stub UI. */
@@ -292,7 +305,10 @@ permalink: /
       <p class="eyebrow">Travel booking organizer</p>
       <h1>Every booking, in one place — without the digging.</h1>
       <p class="lede">Landed automatically finds your flight, hotel, and rental confirmations in Gmail and organizes them into trips, so you're never digging through your inbox to find which airline you're flying or where you're staying.</p>
-      <div class="status-pill"><span class="dot"></span>Currently in closed testing</div>
+      <a class="cta" href="https://apps.apple.com/app/id6803170357">
+        <small>Free on iPhone</small>
+        <strong>Download on the App Store</strong>
+      </a>
     </div>
 
     <div class="pass" aria-hidden="true">
@@ -376,6 +392,7 @@ permalink: /
     <div class="footer-links">
       <a href="privacy-policy.html">Privacy Policy</a>
       <a href="terms-of-service.html">Terms of Service</a>
+      <a href="https://apps.apple.com/app/id6803170357">App Store</a>
       <a href="support.html">Support</a>
       <a href="mailto:landedconcierge@gmail.com">Contact</a>
     </div>
