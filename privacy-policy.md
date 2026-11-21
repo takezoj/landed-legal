@@ -6,7 +6,7 @@ permalink: /privacy-policy.html
 # Landed Privacy Policy
 
 **Effective date:** August 21, 2026
-**Last updated:** October 7, 2026
+**Last updated:** November 21, 2026
 
 ## 1. Who this covers
 
@@ -16,7 +16,7 @@ This policy applies to Landed, a mobile app that helps you keep track of your tr
 
 **Account information.** When you sign in with Google or Apple, we receive the basic profile information they share (such as your name and email address; with Apple you can choose to hide your email behind a private relay address) to create your Landed account. If you use Landed without signing in, we create an anonymous account for you with a random account ID instead. Your account ID is used to keep your data separate from everyone else's.
 
-**Gmail access (optional).** If you choose to connect your Gmail account, Landed requests **read-only** access to your Gmail so it can search for booking confirmation emails (flights, hotels, trains, etc.) and add them to your trip list automatically. Landed can never send email from your account, delete anything in your inbox, or modify your messages. Only the content of emails that look like booking confirmations is processed — Landed doesn't read or store your inbox generally.
+**Gmail access (optional).** If you choose to connect your Gmail account, Landed requests **read-only** access to your Gmail so it can search for booking confirmation emails (flights, hotels, trains, etc.) and add them to your bookings for your review. Landed can never send email from your account, delete anything in your inbox, or modify your messages. Only the content of emails that look like booking confirmations is processed — Landed doesn't read or store your inbox generally.
 
 **Booking and trip data.** Whatever you enter yourself (manually or via the Gmail auto-detection above) — trip names, dates, flight numbers, hotel names, confirmation numbers, vendor names, addresses, notes, budgets and expenses you track, and to-do items you add for a trip.
 
@@ -56,7 +56,7 @@ We keep your data as long as your account exists. You can delete individual book
 
 ## 6. Your choices
 
-- As of this writing, deleting your account (see above) is the way to fully revoke Landed's Gmail access — there isn't yet a way to disconnect Gmail on its own while keeping the rest of your account.
+- You can disconnect Gmail at any time from Settings → Account → Disconnect Gmail. This revokes Landed's access to your Gmail without deleting your account. Bookings already added to your account stay until you delete them.
 - You can review, edit, or delete any booking or trip in the app at any time.
 - You can delete your account and all your data at any time (see above).
 - You can also revoke Landed's access to your Google account directly from your [Google Account permissions page](https://myaccount.google.com/permissions).
